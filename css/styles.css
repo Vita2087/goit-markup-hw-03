@@ -1,24 +1,60 @@
-/* font-family: "Raleway", sans-serif;  */
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: #434455;
   background-color: #fff;
+
+  /* reset -скидання */
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+/* common -спільне*/
+.conteiner {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+img {
+  display: block;
+}
 /* HEADER */
 .page-header {
-  display: flex;
-  width: 1440px;
-  height: 72px;
   border-bottom: 1px solid #e7e9fc;
 }
-.logo-link-header {
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.address-list {
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+.logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -27,8 +63,16 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-
+.logo-link .logo-part {
+  color: #2e2f42;
+}
+.logo-header {
+  padding: 24px 0;
+  margin-right: 76px;
+}
 .nav-link {
+  padding: 24px 0;
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -36,9 +80,12 @@ a {
   color: #2e2f42;
 }
 .address {
+  margin-left: auto;
   font-style: normal;
 }
 .address-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -115,10 +162,7 @@ a {
 .page-footer {
   background: #2e2f42;
 }
-.logo-link-footer {
-  margin-bottom: 16px;
-}
-.logo-part-footer {
+.logo-footer .logo-part {
   color: #f4f4fd;
 }
 .footer-text {
