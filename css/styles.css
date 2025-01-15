@@ -27,7 +27,7 @@ p {
 button {
   cursor: pointer;
 }
-.conteiner {
+.container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -39,7 +39,7 @@ img {
 .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
-.header-conteiner {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -103,8 +103,8 @@ img {
 /* SECTION 1 */
 .hero-image {
   background: #2e2f42;
-  padding-bottom: 188px;
   padding-top: 188px;
+  padding-bottom: 188px;
 }
 .page-title {
   font-weight: 700;
@@ -119,7 +119,6 @@ img {
   margin-bottom: 48px;
 }
 button {
-  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -132,6 +131,7 @@ button {
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
+  min-width: 169px;
 }
 .button:hover,
 .button:focus {
@@ -155,7 +155,7 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.advant-conteiner {
+.advant {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -165,7 +165,7 @@ button {
   gap: 24px;
 }
 .advant-item {
-/* (100%-3*24px)/4=7 */
+  /* (100%-3*24px)/4=7 */
   width: calc((100% - 72px) / 4);
 }
 .section-subtitle {
@@ -185,6 +185,8 @@ button {
 /* SECTION 3 */
 .team {
   background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-title {
   font-weight: 700;
@@ -194,18 +196,17 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 .team-list {
   display: flex;
   align-items: center;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .team-item {
   background: #fff;
   border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px) /4);
 }
 .who-is {
   padding: 32px 16px;
@@ -214,21 +215,29 @@ button {
 
 /* SECTION 4 */
 
+.our-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.section-title {
+  margin-bottom: 72px;
+}
 .portfolio-list {
   display: flex;
   row-gap: 48px;
   column-gap: 24px;
   max-width: 1128px;
   flex-wrap: wrap;
-  padding-bottom: 120px;
 }
-.portfolio-item {
+/* .portfolio-item {
   /* (100%-4*24)/6=7 */
-  width: calc(100% - 4 * 24px) / 6;
-}
+  /* width: calc((100% - 96px) / 6); */
+  
 .portfolio-content {
-  padding: 32px 0 32px 16px;
+  padding: 32px 0;
   text-align: left;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-subtitle {
   margin-bottom: 8px;
@@ -237,7 +246,7 @@ button {
 .page-footer {
   background: #2e2f42;
   padding-bottom: 100px;
-  padding-top: 100px
+  padding-top: 100px;
 }
 .logo-footer .logo-part {
   color: #f4f4fd;
