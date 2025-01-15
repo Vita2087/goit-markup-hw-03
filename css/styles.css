@@ -24,6 +24,9 @@ p {
   margin: 0;
 }
 /* common -спільне*/
+button {
+  cursor: pointer;
+}
 .conteiner {
   max-width: 1158px;
   padding: 0 15px;
@@ -108,23 +111,44 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  margin: 0 auto;
+  max-width: 496px;
 }
-.button-text {
+button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  cursor: pointer;
   background-color: #4d5ae5;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 188px;
 }
-.button-text:hover,
-.button-text:focus {
+.button-box {
+  padding: 16px 32px;
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
   background-color: #404bbf;
 }
 /* SECTION 2 */
 .absent {
-  display: none;
+  display: none; /*приховати h2 якого не відображ на сайті */
+}
+.advant-conteiner {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.advant-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  /* (100%-3*24)/4=7 */
+  width: calc(100% - 3 * 24px) / 4;
 }
 .section-subtitle {
   font-weight: 500;
@@ -132,6 +156,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .section-text {
   font-size: 16px;
@@ -151,13 +176,45 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 .team-item {
   background: #fff;
+  border-radius: 0 0 4px 4px;
+}
+.who-is {
+  padding: 32px 16px;
+  text-align: center;
 }
 
 /* SECTION 4 */
 
+.portfolio-list {
+  display: flex;
+  row-gap: 48px;
+  column-gap: 24px;
+  max-width: 1128px;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+}
+.portfolio-item {
+  /* (100%-4*24)/6=7 */
+  width: calc(100% - 4 * 24px) / 6;
+}
+.portfolio-content {
+  padding: 32px 0 32px 16px;
+  text-align: left;
+}
+.portfolio-subtitle {
+  margin-bottom: 8px;
+}
 /* FOOTER */
 .page-footer {
   background: #2e2f42;
@@ -170,4 +227,13 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.logo-footer {
+  display: inline-block;
+  padding-top: 100px;
+  margin-bottom: 16px;
+}
+.footer-text {
+  padding-bottom: 100px;
+  max-width: 264px;
 }
