@@ -53,9 +53,9 @@ img {
   gap: 40px;
 }
 .address-list {
-  gap: 40px;
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 .logo-link {
   font-family: 'Raleway', sans-serif;
@@ -103,6 +103,8 @@ img {
 /* SECTION 1 */
 .hero-image {
   background: #2e2f42;
+  padding-bottom: 188px;
+  padding-top: 188px;
 }
 .page-title {
   font-weight: 700;
@@ -111,12 +113,13 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding-top: 188px;
-  padding-bottom: 48px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 496px;
+  margin-bottom: 48px;
 }
 button {
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -124,11 +127,10 @@ button {
   color: #fff;
   background-color: #4d5ae5;
   display: block;
-  margin: 0 auto;
-  padding-bottom: 188px;
-}
-.button-box {
+  margin-left: auto;
+  margin-right: auto;
   padding: 16px 32px;
+  border: none;
   border-radius: 4px;
 }
 .button:hover,
@@ -136,8 +138,22 @@ button {
   background-color: #404bbf;
 }
 /* SECTION 2 */
-.absent {
-  display: none; /*приховати h2 якого не відображ на сайті */
+/* <h2 class="section-title absent">Advantages</h2> */
+/*.absent {
+  display: none; 
+} /*приховати h2 якого не відображ на сайті */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .advant-conteiner {
   padding-top: 120px;
@@ -147,8 +163,10 @@ button {
   display: flex;
   align-items: center;
   gap: 24px;
-  /* (100%-3*24)/4=7 */
-  width: calc(100% - 3 * 24px) / 4;
+}
+.advant-item {
+/* (100%-3*24px)/4=7 */
+  width: calc((100% - 72px) / 4);
 }
 .section-subtitle {
   font-weight: 500;
@@ -218,9 +236,15 @@ button {
 /* FOOTER */
 .page-footer {
   background: #2e2f42;
+  padding-bottom: 100px;
+  padding-top: 100px
 }
 .logo-footer .logo-part {
   color: #f4f4fd;
+}
+.logo-link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-text {
   font-size: 16px;
@@ -228,12 +252,6 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
 }
-.logo-footer {
-  display: inline-block;
-  padding-top: 100px;
-  margin-bottom: 16px;
-}
 .footer-text {
-  padding-bottom: 100px;
   max-width: 264px;
 }
