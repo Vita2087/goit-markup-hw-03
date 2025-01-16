@@ -230,7 +230,7 @@ button {
   flex-wrap: wrap;
 }
 /* .portfolio-item {
-  /* (100%-4*24)/6=7 */
+  /* (100%-4 * 24)/6 */
   /* width: calc((100% - 96px) / 6); */
 
 .portfolio-content {
@@ -251,7 +251,7 @@ button {
 .logo-footer .logo-part {
   color: #f4f4fd;
 }
-.logo-link {
+.logo-footer {
   display: inline-block;
   margin-bottom: 16px;
 }
